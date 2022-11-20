@@ -6,10 +6,9 @@
         xmlns:local="clr-namespace:projeKt_C4YDE" xmlns:iconPacks="clr-namespace:MahApps.Metro.IconPacks;assembly=MahApps.Metro.IconPacks.Material"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="380"
-        Background="Transparent"
+        AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
-        MouseDown="Window_MouseDown"
-        >
+        MouseDown="Window_MouseDown">
 
     <Grid>
         <Grid>
@@ -90,6 +89,21 @@
                 <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
                     <Button Width="100" Height="40" Content="login" Margin="60,0,50,0"/>
                     <Button Width="100" Height="40" Content="register"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Margin="0,15,0,0">
+                    
+                    <TextBlock Text="reset"
+                               Foreground="Wheat"
+                               FontSize="16"
+                               FontWeight="Bold"
+                               Cursor="Hand"/>
+                    
+                    <TextBlock Text=" password"
+                               Foreground="Wheat"
+                               FontSize="16"
+                               FontWeight="Light"/>
                 </StackPanel>
             </StackPanel>
             
