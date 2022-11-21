@@ -25,7 +25,7 @@
                 </Border.Background>
             </Border>
             <StackPanel VerticalAlignment="Center">
-                <Image Source="C:\MHNL\Code\projeKt C4YDE\ace.png" Width="80"/>
+                <Image Source=".\img\ace.png" Width="80"/>
                 <TextBlock Text="projeKt C4YDE"
                            FontWeight="Bold"
                            FontFamily="GOST Common"
