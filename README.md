@@ -2,4 +2,4 @@
 i dont know
 
 
-![image](https://user-images.githubusercontent.com/67733779/202894553-f0f3815d-6f97-479b-9b28-14144c6da94e.png)
+![image](https://user-images.githubusercontent.com/67733779/203250101-358eece0-11c5-4371-b34c-1de1438b711f.png)
