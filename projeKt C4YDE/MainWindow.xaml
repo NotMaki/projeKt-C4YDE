@@ -34,8 +34,8 @@
                            HorizontalAlignment="Center"/>
             </StackPanel>
             <StackPanel Grid.Row="1">
-            <StackPanel Orientation="Horizontal">
-                <TextBox FontFamily="GOST Common"
+                <StackPanel Orientation="Horizontal">
+                    <TextBox FontFamily="GOST Common"
                          FontWeight="Light"
                          Text="username"
                          FontSize="20"
@@ -48,13 +48,13 @@
                          Opacity="0.5"
                          Height="25"
                          Margin="50,0,0,0"/>
-                <iconPacks:PackIconMaterial Kind="AccountOutline" 
+                    <iconPacks:PackIconMaterial Kind="AccountOutline" 
                                             VerticalAlignment="Center"
                                             HorizontalAlignment="Center"
                                             Foreground="White"/>
-                
-            </StackPanel>
-            <Border Width="250"
+
+                </StackPanel>
+                <Border Width="250"
                     Height="2"
                     Background="White"
                     Opacity="0.5"/>
@@ -75,10 +75,13 @@
                          Opacity="0.5"
                          Height="25"
                          Margin="50,0,0,0"/>
-                    <iconPacks:PackIconMaterial Kind="EyeOffOutline" 
+                    <Button Width="30">
+                        <iconPacks:PackIconMaterial Kind="EyeOffOutline" 
                                             VerticalAlignment="Center"
                                             HorizontalAlignment="Center"
                                             Foreground="White"/>
+                    </Button>
+
 
                 </StackPanel>
                 <Border Width="250"
@@ -93,21 +96,21 @@
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Center"
                             Margin="0,15,0,0">
-                    
+
                     <TextBlock Text="reset"
                                Foreground="Wheat"
                                FontSize="16"
                                FontWeight="Bold"
                                Cursor="Hand"/>
-                    
+
                     <TextBlock Text=" password"
                                Foreground="Wheat"
                                FontSize="16"
                                FontWeight="Light"/>
                 </StackPanel>
             </StackPanel>
-            
-            
+
+
         </Grid>
     </Grid>
 </Window>
