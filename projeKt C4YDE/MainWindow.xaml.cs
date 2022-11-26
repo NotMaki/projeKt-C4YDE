@@ -31,5 +31,12 @@ namespace projeKt_C4YDE
                 DragMove();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Register register = new Register();
+            this.Close();
+            register.ShowDialog();
+
+        }
     }
 }

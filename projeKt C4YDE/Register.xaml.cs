@@ -24,6 +24,16 @@ namespace projeKt_C4YDE
             InitializeComponent();
         }
 
+        private void TextBlock_Initialized(object sender, EventArgs e)
+        {
 
+        }
+
+        private void SignIn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.ShowDialog();
+        }
     }
 }
