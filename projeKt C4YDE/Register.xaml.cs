@@ -23,5 +23,7 @@ namespace projeKt_C4YDE
         {
             InitializeComponent();
         }
+
+
     }
 }
