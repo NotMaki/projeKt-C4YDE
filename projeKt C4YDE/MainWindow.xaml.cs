@@ -38,5 +38,16 @@ namespace projeKt_C4YDE
             register.ShowDialog();
 
         }
+
+        private void ShowPassword_OnClick(object sender, RoutedEventArgs e)
+        {
+            string messageBoxText = "this is a test";
+            string caption = "Show Password TEST";
+            MessageBoxButton button = MessageBoxButton.YesNoCancel;
+            MessageBoxImage icon = MessageBoxImage.Warning;
+            MessageBoxResult result;
+
+            result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
+        }
     }
 }
