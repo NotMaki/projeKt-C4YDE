@@ -29,13 +29,13 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="White"/>
-                    <Setter Property="Opacity" Value="0.4"/>
+                    <Setter Property="Background" Value="Wheat"/>
+                    <Setter Property="Opacity" Value="0.7"/>
                     <Setter Property="Foreground" Value="#b1bb0f"/>
                 </Trigger>
                 <Trigger Property="IsPressed" Value="True">
                     <Setter Property="Background" Value="Wheat"/>
-                    <Setter Property="Opacity" Value="0.6"/>
+                    <Setter Property="Opacity" Value="1"/>
                     <Setter Property="Foreground" Value="#b1bb0f"/>
                 </Trigger>
             </Style.Triggers>
