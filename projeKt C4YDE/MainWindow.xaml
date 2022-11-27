@@ -10,6 +10,8 @@
         WindowStyle="None" ResizeMode="NoResize"
         MouseDown="Window_MouseDown">
     <Window.Resources>
+        <Image x:Key="Show" Source="img\show.ico" Height="20" Width="20" />
+        <Image x:Key="Hide" Source="img\hide.ico" Height="20" Width="20"/>
         <Style x:Key="passswordbutton" TargetType="{x:Type Button}">
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontFamily" Value="GOST Common"/>
@@ -105,13 +107,11 @@
                          Opacity="0.5"
                          Height="25"
                          Margin="50,0,0,0"/>
-                    
-                    
-                    <Button Style="{DynamicResource passswordbutton}" Width="35" IsEnabled="True" Click="ShowPassword_OnClick" Margin="-7,0,0,0">
-                        <iconPacks:PackIconMaterial Kind="EyeOffOutline" 
-                                            VerticalAlignment="Center"
-                                            HorizontalAlignment="Center"
-                                            Foreground="White"/>
+
+
+                    <Button Style="{DynamicResource passswordbutton}" Name="togglepassword" Width="35" IsEnabled="True" Click="ShowPassword_OnClick" Margin="-7,0,0,0"
+                            Foreground="White">
+                        <DynamicResource ResourceKey="Show"/>
                     </Button>
 
 
@@ -129,16 +129,18 @@
                             HorizontalAlignment="Center"
                             Margin="0,15,0,0">
 
-                    <TextBlock Text="reset"
-                               Foreground="Wheat"
-                               FontSize="16"
-                               FontWeight="Bold"
-                               Cursor="Hand"/>
+                    <TextBlock  
+                        Foreground="White"
+                        FontSize="15">
 
-                    <TextBlock Text=" password"
-                               Foreground="Wheat"
-                               FontSize="16"
-                               FontWeight="Light"/>
+                        <Run>reset</Run>
+                        
+                        <Hyperlink NavigateUri="https://google.com"
+                                   Foreground="White"
+                                   FontWeight="SemiBold">
+                            password
+                        </Hyperlink>
+                    </TextBlock>
                 </StackPanel>
             </StackPanel>
 

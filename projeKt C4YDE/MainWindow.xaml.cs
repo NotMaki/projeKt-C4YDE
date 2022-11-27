@@ -41,13 +41,16 @@ namespace projeKt_C4YDE
 
         private void ShowPassword_OnClick(object sender, RoutedEventArgs e)
         {
-            string messageBoxText = "this is a test";
-            string caption = "Show Password TEST";
-            MessageBoxButton button = MessageBoxButton.YesNoCancel;
-            MessageBoxImage icon = MessageBoxImage.Warning;
-            MessageBoxResult result;
-
-            result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
+            {
+                if (togglepassword.Content == FindResource("Show"))
+                {
+                    togglepassword.Content = FindResource("Hide");
+                }
+                else
+                {
+                    togglepassword.Content = FindResource("Show");
+                }
+            }
         }
     }
 }
