@@ -31,5 +31,11 @@ namespace projeKt_C4YDE
             this.Close();
             mainWindow.ShowDialog();
         }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
+        }
     }
 }

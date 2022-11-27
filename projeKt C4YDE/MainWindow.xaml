@@ -10,8 +10,8 @@
         WindowStyle="None" ResizeMode="NoResize"
         MouseDown="Window_MouseDown">
     <Window.Resources>
-        <Image x:Key="Show" Source="img\show.ico" Height="20" Width="20" />
-        <Image x:Key="Hide" Source="img\hide.ico" Height="20" Width="20"/>
+        <Image x:Key="Show" Source="img\show.ico" Height="30" Width="30" />
+        <Image x:Key="Hide" Source="img\hide.ico" Height="30" Width="30"/>
         <Style x:Key="passswordbutton" TargetType="{x:Type Button}">
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontFamily" Value="GOST Common"/>
@@ -83,7 +83,9 @@
                     <iconPacks:PackIconMaterial Kind="AccountOutline" 
                                             VerticalAlignment="Center"
                                             HorizontalAlignment="Center"
-                                            Foreground="White"/>
+                                            Foreground="White"
+                                                Height="20"
+                                                Width="20"/>
 
                 </StackPanel>
                 <Border Width="250"
@@ -94,7 +96,8 @@
 
 
                 <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
-                    <PasswordBox FontFamily="GOST Common"
+                    <PasswordBox x:Name="MyPasswordBox"
+                         FontFamily="GOST Common"
                          FontWeight="Light"
                          Password="password"
                          FontSize="20"
@@ -107,6 +110,20 @@
                          Opacity="0.5"
                          Height="25"
                          Margin="50,0,0,0"/>
+                    <TextBox x:Name="MyTextBox" Text="{Binding Password, Mode=TwoWay, ElementName=MyPasswordBox}" Visibility="Collapsed"
+                         FontFamily="GOST Common"
+                         FontWeight="Light"
+                         FontSize="20"
+                         HorizontalAlignment="Center"
+                         Foreground="White"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Width="235"
+                         HorizontalContentAlignment="Left"
+                         Opacity="0.5"
+                         Height="25"
+                         Margin="50,0,0,0"/>
+                    
 
 
                     <Button Style="{DynamicResource passswordbutton}" Name="togglepassword" Width="35" IsEnabled="True" Click="ShowPassword_OnClick" Margin="-7,0,0,0"
