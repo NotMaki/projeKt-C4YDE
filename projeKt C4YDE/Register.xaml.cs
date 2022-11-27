@@ -37,5 +37,30 @@ namespace projeKt_C4YDE
             if (e.LeftButton == MouseButtonState.Pressed)
                 DragMove();
         }
+
+        private void ShowPassword_OnClick(object sender, RoutedEventArgs e)
+        {
+            {
+                if (togglepassword.Content == FindResource("Show"))
+                {
+                    togglepassword.Content = FindResource("Hide");
+
+                    MyPasswordBox.Visibility = System.Windows.Visibility.Collapsed;
+                    MyTextBox.Visibility = System.Windows.Visibility.Visible;
+
+                    MyTextBox.Focus();
+                }
+                else
+                {
+                    togglepassword.Content = FindResource("Show");
+                    MyPasswordBox.Visibility = System.Windows.Visibility.Visible;
+                    MyTextBox.Visibility = System.Windows.Visibility.Collapsed;
+
+                    MyPasswordBox.Focus();
+                }
+            }
+
+
+        }
     }
 }
