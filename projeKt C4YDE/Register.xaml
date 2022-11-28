@@ -48,12 +48,12 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             
-            <Border CornerRadius="10" Grid.RowSpan="2">
+            <Border CornerRadius="20" Grid.RowSpan="2">
                 <Button Style="{DynamicResource passswordbutton}"
                         Name="togglepassword"
                         Width="35" IsEnabled="True"
                         Click="ShowPassword_OnClick"
-                        Margin="-200,135,0,0"
+                        Margin="282,270,480,140"
                         Foreground="White">
                     <DynamicResource ResourceKey="Show"/>
                 </Button>
@@ -79,7 +79,7 @@
                 <TextBox
                   
                     HorizontalAlignment="Left"
-                    Margin="50,0,0,0"
+                    Margin="55,0,0,0"
                     Foreground="White"
                     Background="Transparent"
                     Height="40"
@@ -90,7 +90,7 @@
                     Opacity="0.5"/>
 
 
-                <Border Width="280"
+                <Border Width="250"
                         Margin="80,0,0,0"
                         HorizontalAlignment="Left"
                         Height="2"
@@ -137,7 +137,7 @@
                         Opacity="0.5"/>
                 <TextBox
                     HorizontalAlignment="Left"
-                    Margin="50,15,0,0"
+                    Margin="55,15,0,0"
                     Foreground="White"
                     Background="Transparent"
                     Height="40"
@@ -161,7 +161,7 @@
                 <StackPanel Orientation="Horizontal"/>
                 <TextBox
                     HorizontalAlignment="Left"
-                    Margin="20,0,0,0"
+                    Margin="30,0,0,0"
                     Foreground="White"
                     Background="Transparent"
                     Height="40"
@@ -171,7 +171,7 @@
                     FontWeight="Light"
                     Opacity="0.6"/>
 
-                <Border Width="280"
+                <Border Width="250"
                         Margin="50,0,0,0"
                         HorizontalAlignment="Left"
                         Height="2"

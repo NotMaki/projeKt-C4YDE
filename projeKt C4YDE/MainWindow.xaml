@@ -48,7 +48,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Border CornerRadius="10" Grid.RowSpan="2">
+            <Border CornerRadius="15" Grid.RowSpan="2">
                 <Border.Background>
                     <LinearGradientBrush>
                         <GradientStop Color="#d066ac" Offset="0.0"/>
